@@ -3,4 +3,83 @@ Css of home page
 ------------------------------------------------------------*/
 .p-home {
     //-------------------------------------------------------
+    .c-mainvisual {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    
+        &__draggable {
+            height: 700px;
+            // @include sp320 {
+            //     height: 374px;
+            // }
+            &item {
+                height: 100%;
+                width: 100%;
+        
+                img {
+                    height: 700px;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    @include tab {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                    // @include sp320 {
+                    //     height: 100%;
+                    //     width: 100%;
+                    //     object-fit: cover;
+                    // }
+                }
+            }
+        }
+    
+        
+    
+        &__content {
+            position: absolute;
+            top: 73.7%;
+            left: 34.2%;
+            transform: translate(-50%, -50%);
+            @include tab {
+                left: 37.2%;
+            }
+            
+            // @include sp320 {
+            //     transform: translate(0);
+            //     top: unset;
+            //     left: 5%;
+            //     bottom: 27px;
+            //     text-align: center;
+            // }
+        }
+    
+        &__img {
+            margin-bottom: 35px;
+            // @include sp320 {
+            //     margin-bottom: 34px;
+            //     width: 281px;
+            // }
+        }
+    
+        &__text {
+            font-size: 2rem;
+            font-weight: 600;
+            padding: 9px 100px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border-radius: 3px;
+            font-feature-settings: "palt" 1;
+          
+            @include sp {
+                font-size: 1.6rem;
+            }
+            // @include sp320 {
+            //     padding: 0 16px;
+            //     display: inline-block;
+            // }
+        }
+    }
 }
